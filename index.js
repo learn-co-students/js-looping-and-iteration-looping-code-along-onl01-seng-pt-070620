@@ -1,7 +1,9 @@
-function writeCards(names, holiday) {
-    for (let i = 0; i < names.length; i++) {
-        console.log(`Thank you, ${names[i]} for the wonderful ${holiday} gift!`)
+function writeCards(namesArray, holiday) {
+    let thankYou = []
+    for (let i = 0; i < namesArray.length; i++) {
+        thankYou.push(`Thank you, ${namesArray[i]}, for the wonderful ${holiday} gift!`)
     }
+    return thankYou;
 }
 
 function countDown(num) {
